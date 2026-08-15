@@ -1,0 +1,36 @@
+@import url(font-awesome.min.css);
+
+/*
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+/* Wrapper */
+
+	#wrapper {
+		background-color: #171527;
+		background-image: url("../../images/overlay.png"), linear-gradient(180deg, rgba(23, 21, 39, 0.55), rgba(19, 17, 34, 0.85)), url("../../images/weic2425a.jpg");
+		background-size: auto, cover, cover;
+		background-position: center, center, center;
+		background-repeat: repeat, no-repeat, no-repeat;
+		background-attachment: fixed, fixed, fixed;
+	}
+
+		#wrapper.fade-in:before {
+			display: none;
+		}
+
+/* Intro */
+
+	body.is-preload #intro {
+		opacity: 1;
+	}
+
+		body.is-preload #intro:not(.hidden) + #header + #nav {
+			-moz-transform: none;
+			-webkit-transform: none;
+			-ms-transform: none;
+			transform: none;
+			opacity: 1;
+		}

@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Research & Projects | Rafael Carmona Vendoiro</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Research projects of Rafael Carmona Vendoiro: Solar Neighborhood Exoplanet Catalogue (CAB CSIC-INTA) and GJ 486 & GJ 357 System Characterization (UCM)." />
+		<meta name="keywords" content="Exoplanets, Solar Neighborhood, GJ 357 d, GJ 486, CARMENES, HARPS, TESS, juliet, dynesty, ELT-PCS, CAB CSIC-INTA, UCM, Niels Bohr Institute" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">RCV Astrophysics</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li><a href="index.html">Overview</a></li>
+							<li class="active"><a href="research.html">Research & Projects</a></li>
+							<li><a href="about.html">About & Leadership</a></li>
+							<li><a href="cv.html">Curriculum Vitae</a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="https://github.com/rcarven" target="_blank" rel="noopener" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="https://orcid.org/0009-0005-4488-7816" target="_blank" rel="noopener" class="icon solid fa-id-badge"><span class="label">ORCID</span></a></li>
+							<li><a href="https://www.linkedin.com/in/rafael-carmona-vendoiro" target="_blank" rel="noopener" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<section class="post">
+								<header class="major">
+									<span class="date">Astrophysical Research Portfolio</span>
+									<h1>Exoplanetary Systems,<br />Habitability & Data Pipelines</h1>
+									<p>Combining high-precision observational data, Bayesian modeling, and Python pipelines to study planetary habitability and system architectures.</p>
+								</header>
+								
+								<div class="image main image-credit-container">
+									<img src="images/Exoearths.jpg" alt="Exoplanet Characterization Artwork — Image Credit: NASA / JPL-Caltech" title="Image Credit: NASA / JPL-Caltech" />
+									<span class="image-credit-badge"><i class="icon solid fa-camera"></i> Image: NASA / JPL-Caltech</span>
+								</div>
+								
+								<h2 id="solar-neighborhood">1. Exoplanets in the Solar Neighbourhood</h2>
+								<p><strong>Institution:</strong> Centro de Astrobiología (CAB, CSIC-INTA) &bull; ESAC Campus<br />
+								<strong>Supervisor:</strong> Dr. J.A. Caballero (Feb 2026 – Apr 2026)</p>
+
+								<div class="image fit"><img src="images/ExoplanetCatalogue.png" alt="Solar Neighborhood Exoplanet Catalogue" /></div>
+
+								<p>The goal of this project was to construct a unified, critically reviewed catalogue of all known exoplanetary systems within 10 parsecs (<em>d</em> &lt; 10 pc) of the Sun to evaluate their habitability and direct imaging feasibility with next-generation instrumentation.</p>
+
+								<h3>Key Achievements & Methodology:</h3>
+								<ul>
+									<li><strong>Data Pipeline & Automation:</strong> Developed an automated Python pipeline to ingest, filter, and standardize data from the <em>NASA Exoplanet Archive</em> and <em>exoplanet.eu</em>, updating host star properties.</li>
+									<li><strong>Literature Review & Signal Categorization:</strong> Conducted a comprehensive literature review validating physical and orbital parameters, categorizing signals into confirmed, candidate, or discarded statuses.</li>
+									<li><strong>Physical Modeling & Habitability:</strong> Programmed theoretical radius derivations using empirical mass-radius relations and analytically calculated planetary equilibrium temperatures and habitable zone boundaries.</li>
+									<li><strong>Direct Imaging Feasibility (ELT-PCS):</strong> Modeled planet-to-star flux ratios and angular separations across the nearby sample. Identified optimized high-interest targets (such as <strong>Proxima Centauri b</strong> and <strong>GJ 1061 d</strong>) detectable by the upcoming PCS instrument on the Extremely Large Telescope (ELT).</li>
+									<li><strong>Web Deployment & UI:</strong> Designed an interactive web interface featuring dynamic sorting (Pandas + DataTables.js) and custom visibility charts built with Plotly.</li>
+								</ul>
+
+								<div class="badge-group">
+									<a href="https://github.com/rcarven/solar-neighbourhood-exoplanets" target="_blank" rel="noopener" class="button primary small icon brands fa-github">GitHub Repository</a>
+									<a href="https://rcarven.github.io/solar-neighbourhood-exoplanets/" target="_blank" rel="noopener" class="button small icon solid fa-globe">Interactive Web Catalogue</a>
+								</div>
+
+								<hr />
+
+								<h2 id="tfg">2. Bachelor's Thesis (TFG): "Characterization of Exoplanetary Systems"</h2>
+								<p><strong>Institution:</strong> Universidad Complutense de Madrid (UCM)<br />
+								<strong>Supervisor:</strong> Dr. David Montes &bull; <strong>Grade:</strong> Outstanding (9.6 / 10)</p>
+
+								<div class="image fit"><img src="images/Defensa_TFG.jpg" alt="Defense of Bachelor's Thesis (TFG)" /></div>
+
+								<p>Focused on the detection, orbital fitting, and physical characterization of exoplanetary systems around the nearby M-dwarf stars <strong>GJ 486</strong> and <strong>GJ 357</strong>.</p>
+
+								<h3>Key Achievements & Methodology:</h3>
+								<ul>
+									<li><strong>Multi-Instrumental Analysis:</strong> Processed transit photometric light curves from the <strong>TESS satellite</strong> across multiple sectors using the <code>lightkurve</code> Python package. Combined and analyzed a high-precision radial velocity (RV) dataset spanning an observational baseline of up to <strong>22 years</strong> across five spectrographs: <strong>CARMENES, HARPS, HIRES, PFS, and UVES</strong>.</li>
+									<li><strong>Advanced Bayesian Modeling:</strong> Implemented joint photometric and radial velocity fits using the <code>juliet</code> library with nested sampling algorithms (<code>dynesty</code>).</li>
+									<li><strong>Stellar Activity Mitigation:</strong> Incorporated Gaussian Process (GP) regression models based on the star's rotation period to model and mitigate stellar activity noise in the multiplanetary system GJ 357.</li>
+									<li><strong>Habitability Calculations & Astrobiology:</strong> Determined key physical parameters (mass, radius, mean density) of the rocky planets. Analytical calculations confirmed the position of <strong>GJ 357 d within the conservative habitable zone</strong>, evaluating its astrobiological potential for future space telescopes.</li>
+								</ul>
+
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section class="split contact" style="width: 100%;">
+							<section class="alt">
+								<h3>Email Contact</h3>
+								<p><a href="mailto:rcarmo02@ucm.es">rcarmo02@ucm.es</a></p>
+							</section>
+							<section>
+								<h3>Affiliation</h3>
+								<p>Niels Bohr Institute, University of Copenhagen (UCPH)<br />
+								Blegdamsvej 17, 2100 København, Denmark</p>
+							</section>
+							<section>
+								<h3>ORCID iD</h3>
+								<p><a href="https://orcid.org/0009-0005-4488-7816" target="_blank" rel="noopener" class="orcid-link"><i class="icon solid fa-id-badge"></i> 0009-0005-4488-7816</a></p>
+							</section>
+							<section>
+								<h3>Profiles & Code</h3>
+								<ul class="icons alt">
+									<li><a href="https://github.com/rcarven" target="_blank" rel="noopener" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="https://orcid.org/0009-0005-4488-7816" target="_blank" rel="noopener" class="icon solid alt fa-id-badge"><span class="label">ORCID</span></a></li>
+									<li><a href="https://www.linkedin.com/in/rafael-carmona-vendoiro" target="_blank" rel="noopener" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
+								</ul>
+							</section>
+						</section>
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>&copy; Rafael Carmona Vendoiro</li><li>Hosted on GitHub Pages</li><li>Background: ESA / Webb</li></ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
